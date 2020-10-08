@@ -1,5 +1,5 @@
 {
-  "name": "server-node-tsc",
+  "name": "rest-api-nodejs-knex",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,26 +11,29 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/jsonwebtoken": "^8.5.0",
-    "body": "^5.1.0",
+    "bcrypt": "^5.0.0",
     "celebrate": "^13.0.3",
-    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.1.1",
     "http": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^0.21.5",
-    "parser": "^0.1.4",
+    "knex": "^0.21.6",
+    "nodemailer": "^6.4.13",
+    "nodemailer-express-handlebars": "^4.0.0",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "@types/cookie-parser": "^1.4.2",
+    "@types/bcrypt": "^3.0.0",
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
-    "ts-node": "^9.0.0",
-    "ts-node-dev": "^1.0.0-pre.62",
-    "typescript": "^4.0.2"
+    "@types/helmet": "0.0.48",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.11.5",
+    "@types/nodemailer": "^6.4.0",
+    "@types/nodemailer-direct-transport": "^1.0.31",
+    "@types/nodemailer-smtp-transport": "^2.7.4",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^4.0.3"
   }
 }

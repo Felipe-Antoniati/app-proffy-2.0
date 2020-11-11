@@ -1,18 +1,27 @@
-import React, {InputHTMLAttributes} from 'react';
+import React, { InputHTMLAttributes } from "react";
 
-import './styles.css';
+import { InputBox } from "./styles";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  span: string;
   label?: string;
-  name: string;
+  idName: string;
+  inputType: string;
 }
 
-const Input: React.FC<InputProps> = ({label, name, ...rest}) => {
-  return(
-    <div className="input-block">
-    <label htmlFor={name}>{label}</label>
-    <input type="text" id={name} {...rest}/>
-  </div>
+const Input: React.FC<InputProps> = ({
+  span,
+  label,
+  idName,
+  inputType,
+  ...rest
+}) => {
+  return (
+    <InputBox>
+      <label htmlFor={idName}>{label}</label>
+      <input type={inputType} id={idName} {...rest} />
+      <span>{span}</span>
+    </InputBox>
   );
 };
 

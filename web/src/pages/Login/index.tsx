@@ -23,7 +23,7 @@ const Login: React.FC = () => {
             inputType="password"
             required
           />
-          <Button title="Enter" routes="/map" />
+          <Button title="Enter" routes="/landing" />
         </Form>
       </FormLogin>
     </LoginPage>

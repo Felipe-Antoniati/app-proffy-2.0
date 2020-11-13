@@ -4,8 +4,8 @@ import backgroundImg from "../../images/bkg-landing.png";
 export const ProffyContainer = styled.div`
   width: 100vw;
   max-width: 700px;
-
   height: 100vh;
+  
   background: url(${backgroundImg}) no-repeat center;
   background-color: ${(props) => props.theme.colors.primary};
 `;

@@ -1,12 +1,10 @@
 import React from "react";
-
 import Button from "../../components/Button";
-import CheckBox from "../../components/CheckBox";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Proffy from "../../components/Proffy";
 
-import { FooterForm, FormLogin, LoginPage } from "./styles";
+import { FormLogin, LoginPage } from "./styles";
 
 const Login: React.FC = () => {
   return (
@@ -25,9 +23,6 @@ const Login: React.FC = () => {
             inputType="password"
             required
           />
-          <FooterForm>
-            <CheckBox title="Lembrar-me"/>
-          </FooterForm>
           <Button title="Enter" routes="/map" />
         </Form>
       </FormLogin>

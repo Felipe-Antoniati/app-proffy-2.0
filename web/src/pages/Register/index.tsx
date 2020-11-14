@@ -6,7 +6,7 @@ import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Proffy from "../../components/Proffy";
 
-import arrowLeft from "../../images/arrow-left.svg";
+import arrowLeft from "../../images/icons/arrow-left.svg";
 
 import { FormLogin, LoginContainer, LoginPage } from "./styles";
 
